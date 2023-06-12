@@ -59,7 +59,10 @@ export const Meta = ({ pageTitle, pageDescription, pageImage }: MetaArgs) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+
+      <link rel="icon" href="/static/favicon.ico" sizes="any" />
+      <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
+
       <meta name="apple-mobile-web-app-title" content={conference.Name} />
       <title>{title}</title>
       <meta property="og:title" content={title} />

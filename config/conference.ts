@@ -9,26 +9,26 @@ import {
   Venue,
 } from './types'
 import { zonedTimeToUtc } from 'date-fns-tz'
-import { add, sub, set, toDate } from 'date-fns'
+import { add, set, toDate } from 'date-fns'
 import { optusStadium } from './venues/optus-stadium'
 
-const name = 'DDD Perth'
-const tagLine = `${name} is an inclusive non-profit conference for the Perth software community`
+const name = 'DDD Melbourne'
+const tagLine = `${name} is an inclusive non-profit conference for the Melbourne software community`
 
 const hideDate = false
 const ticketPurchasingOptions = TicketPurchasingOptions.OnSale
-const staticDate = '2023-10-07T08:00'
+const staticDate = '2024-03-16T08:00'
 const date = zonedTimeToUtc(staticDate, '+08:00')
 const endDate = add(date, { hours: 12 })
 const currentInstance = date.getFullYear()
 const firstInstance = 2015
-const registrationOpenFrom = zonedTimeToUtc('2023-06-08T08:00:00', '+08:00')
-const registrationOpenUntil = hideDate ? null : sub(date, { hours: 14, minutes: 45 })
-const presentationSubmissionsOpenFrom = zonedTimeToUtc('2023-05-22T08:00:00', '+08:00')
-const presentationSubmissionsOpenUntil = zonedTimeToUtc('2023-06-18T23:59:59', '+08:00')
-const votingOpenFrom = zonedTimeToUtc('2023-07-03T17:00:00', '+08:00')
-const votingOpenUntil = zonedTimeToUtc('2023-07-14T23:59:59', '+08:00')
-const agendaPublishedFrom = zonedTimeToUtc('2023-08-04T17:00:00', '+08:00')
+const registrationOpenFrom = zonedTimeToUtc('2099-01-01T08:00:00', '+08:00')
+const registrationOpenUntil = null
+const presentationSubmissionsOpenFrom = zonedTimeToUtc('2099-05-22T08:00:00', '+08:00')
+const presentationSubmissionsOpenUntil = zonedTimeToUtc('2099-06-18T23:59:59', '+08:00')
+const votingOpenFrom = zonedTimeToUtc('2099-07-03T17:00:00', '+08:00')
+const votingOpenUntil = zonedTimeToUtc('2099-07-14T23:59:59', '+08:00')
+const agendaPublishedFrom = zonedTimeToUtc('2099-08-04T17:00:00', '+08:00')
 const feedbackOpenFrom = toDate(date)
 const feedbackOpenUntil = endDate
 const importantDates: ImportantDate[] = [
@@ -80,7 +80,7 @@ const Conference: IConference = {
   PreviousInstance: (currentInstance - 1).toString(),
   PreviousInstances: [...Array(currentInstance - firstInstance).keys()].map((_, i) => (firstInstance + i).toString()),
   Organiser: {
-    Name: 'DDD WA Inc.',
+    Name: 'OZ Dev Inc.',
     Url: 'https://blog.dddperth.com/meet-the-team-35865433cb39',
     ShirtColour: 'yellow',
   },
@@ -151,18 +151,15 @@ const Conference: IConference = {
 
   Socials: {
     Twitter: {
-      Id: '977876011',
-      Name: 'DDDPerth',
+      Id: '971044039',
+      Name: 'DDDMelb',
     },
-    Facebook: 'DDDPerth',
-    Flickr: 'https://www.flickr.com/photos/135003652@N08/albums',
-    Youtube: 'https://www.youtube.com/channel/UCj4UnNYakbLAh2xTWTjeoAQ',
-    Blog: 'https://blog.dddperth.com/',
-    Email: 'info@dddperth.com',
-    MailingList: 'http://eepurl.com/cRvaSf',
-    GitHub: 'dddwa',
-    Instagram: 'dddperth',
-    Linkedin: 'ddd-wa-inc',
+    Flickr: 'https://www.flickr.com/photos/135717775@N07/albums',
+    Youtube: 'https://www.youtube.com/@dddmelbourne3504',
+    Blog: 'https://medium.com/ddd-melbourne',
+    Email: 'dddmelbourne@gmail.com',
+    GitHub: 'https://github.com/OpenDDD',
+    Instagram: 'dddmelb',
   },
 
   ImportantContacts: {
