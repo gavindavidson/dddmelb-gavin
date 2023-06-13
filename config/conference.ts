@@ -88,7 +88,7 @@ const Conference: IConference = {
   SiteDescription: `${tagLine}.`,
   Goal: "Our goal is to create an approachable event that appeals to the whole community, especially people that don't normally get to attend or speak at conferences.",
   GoogleAnalyticsId: 'UA-60040308-1',
-  TicketPrice: '$60',
+  TicketPrice: 'TBD',
   ChildcarePrice: 'free',
   TicketsProviderId: TicketsProvider.Tito,
   TicketsProviderAccountId: 'dddperth',
@@ -104,7 +104,7 @@ const Conference: IConference = {
     'Agile, building great teams, UI design, UX, software testing, virtual reality, women in tech, web accessibility, open source software, workplace culture, mental health, unconscious bias, building engaged teams, self-employment tips, mentoring, Scrum, pair programming, bots, IoT, machine learning, neural networks, quantum encryption, security, reverse engineering, blockchain, Assembly language, automated deployments, mobile development, mobile test automation, Domain Driven Design, cloud native, architecture, microservices, serverless, service meshes, stream programming and Rx, APIs, GraphQL, actors, JavaScript, SPAs, TypeScript, authentication, React, UWP, Elm, HTML, HTTP protocol, Git, Docker and pointers',
 
   ContactEmail: 'info@dddperth.com',
-  SponsorshipEmail: 'sponsorship@dddperth.com',
+  SponsorshipEmail: 'sponsorship@dddmelbourne.com',
   MentoringEmail: 'mentors@dddperth.com',
   EmergencyContactName: 'Rob Moore',
   EmergencyContactPhoneNumber: '0400 777 763',
@@ -158,7 +158,7 @@ const Conference: IConference = {
     Youtube: 'https://www.youtube.com/@dddmelbourne3504',
     Blog: 'https://medium.com/ddd-melbourne',
     Email: 'dddmelbourne@gmail.com',
-    GitHub: 'https://github.com/OpenDDD',
+    GitHub: 'OpenDDD',
     Instagram: 'dddmelb',
   },
 
