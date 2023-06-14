@@ -81,8 +81,8 @@ const Conference: IConference = {
   PreviousInstances: [...Array(currentInstance - firstInstance).keys()].map((_, i) => (firstInstance + i).toString()),
   Organiser: {
     Name: 'OZ Dev Inc.',
-    Url: 'https://blog.dddperth.com/meet-the-team-35865433cb39',
-    ShirtColour: 'yellow',
+    Url: 'https://medium.com/ddd-melbourne/the-ddd-melbourne-crew-5f0dd3da09df',
+    ShirtColour: 'TBD',
   },
   TagLine: tagLine,
   SiteDescription: `${tagLine}.`,
@@ -103,15 +103,14 @@ const Conference: IConference = {
   PreviouslySubmittedTopics:
     'Agile, building great teams, UI design, UX, software testing, virtual reality, women in tech, web accessibility, open source software, workplace culture, mental health, unconscious bias, building engaged teams, self-employment tips, mentoring, Scrum, pair programming, bots, IoT, machine learning, neural networks, quantum encryption, security, reverse engineering, blockchain, Assembly language, automated deployments, mobile development, mobile test automation, Domain Driven Design, cloud native, architecture, microservices, serverless, service meshes, stream programming and Rx, APIs, GraphQL, actors, JavaScript, SPAs, TypeScript, authentication, React, UWP, Elm, HTML, HTTP protocol, Git, Docker and pointers',
 
-  ContactEmail: 'info@dddperth.com',
+  ContactEmail: 'dddmelbourne@gmail.com',
   SponsorshipEmail: 'sponsorship@dddmelbourne.com',
   MentoringEmail: 'mentors@dddperth.com',
   EmergencyContactName: 'Rob Moore',
   EmergencyContactPhoneNumber: '0400 777 763',
   MediaOfficerName: 'Rebecca Waters',
 
-  AnonymousReportFormUrl:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=8IU585acE0S9pvuDhIEiS26sQVnJFzFLm-6XlxI4bCFURDVGTks2N1VOQVBWWUU1VFJESDZMNlkxNS4u',
+  AnonymousReportFormUrl: 'https://forms.gle/7GkewmN8BrHQtwWQA',
 
   AnonymousVoting: true,
   PreferentialVoting: true,
@@ -164,25 +163,25 @@ const Conference: IConference = {
 
   ImportantContacts: {
     Police: {
-      Details: '2 Fitzgerald St, Northbridge WA 6003',
-      Phone: '(08) 9422 7111',
+      Details: 'Melbourne West Police Station, 313 Spencer St, Docklands VIC 3008',
+      Phone: null,
       MapUrl:
-        'https://www.google.com.au/maps/place/WA+Police/@-31.9539457,115.8571227,15z/data=!4m8!1m2!2m1!1swa+police!3m4!1s0x2a32bad2aad309a9:0x132b875b4c12ce8a!8m2!3d-31.9465398!4d115.852523',
+        'https://www.google.com/maps/place/Melbourne+West+Police+Station/@-37.813749,144.9488465,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad65d4f44719edf:0xc5a10f192bea4367!8m2!3d-37.8137533!4d144.9510352',
     },
     CentreAgainstSexualAssault: {
       Details: '24 hour line',
       Phone: '1800 806 292',
     },
     EmergencyMedical: {
-      Details: 'Royal Perth Hospital, 197 Wellington St, Perth WA 6000',
+      Details: 'Royal Melbourne Hospital, 300 Grattan St, Melbourne VIC 3000',
       MapUrl:
-        'https://www.google.com.au/maps/place/Royal+Perth+Hospital/@-31.953946,115.8637156,17z/data=!3m1!4b1!4m5!3m4!1s0x2a32bb26d7818b2d:0x31db7aa443eb9c11!8m2!3d-31.953946!4d115.8659043',
+        'https://www.google.com/maps/place/The+Royal+Melbourne+Hospital/@-37.7990618,144.9538002,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad65d2e7f540971:0x9d8b2b9975e322e7!8m2!3d-37.7990618!4d144.9559889',
     },
     NonEmergencyMedical: {
-      Details: 'Perth Medical Centre, 713 Hay St, Perth WA 6000',
-      Phone: '(08) 9481 4342',
+      Details: 'Swanston Street Medical Centre, Level 3, 255 Bourke St, Melbourne VIC 3000',
+      Phone: null,
       MapUrl:
-        'https://www.google.com.au/maps/place/Perth+Medical+Centre/@-31.9539771,115.8552714,17z/data=!3m1!4b1!4m5!3m4!1s0x2a32bad5d00fb27f:0xa93cc014867a5f8b!8m2!3d-31.9539771!4d115.8574654',
+        'https://www.google.com/maps/place/Swanston+Street+Medical+Centre/@-37.8135749,144.9639683,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad642cb0cd76b79:0xd7d3d0b9719c23c0!8m2!3d-37.8135749!4d144.966157',
     },
   },
 
