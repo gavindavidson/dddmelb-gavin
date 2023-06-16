@@ -10,7 +10,7 @@ import {
 } from './types'
 import { zonedTimeToUtc } from 'date-fns-tz'
 import { add, set, toDate } from 'date-fns'
-import { optusStadium } from './venues/optus-stadium'
+import { MelbourneTownHall } from './venues/melbourne-town-hall'
 
 const name = 'DDD Melbourne'
 const tagLine = `${name} is an inclusive non-profit conference for the Melbourne software community`
@@ -72,7 +72,7 @@ if (!hideDate) {
   })
 }
 
-const venue: Venue | null = optusStadium
+const venue: Venue | null = MelbourneTownHall
 
 const Conference: IConference = {
   Name: name,
