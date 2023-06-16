@@ -34,4 +34,16 @@ jobs:
         with:
           path: '.next/server/pages'
           glob: '*.html'
-          destination: 'dddmelboure.midday.coffee'
+          destination: 'dddmelbourne.midday.coffee'
+      - id: 'upload-public'
+        uses: 'google-github-actions/upload-cloud-storage@v1'
+        with:
+          path: 'public'
+          destination: 'dddmelbourne.midday.coffee'
+          parent: false
+      - id: 'upload-next'
+        uses: 'google-github-actions/upload-cloud-storage@v1'
+        with:
+          path: '.next'
+          destination: 'dddmelbourne.midday.coffee/_next'
+          parent: false
