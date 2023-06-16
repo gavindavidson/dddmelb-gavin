@@ -23,7 +23,7 @@ export default function getFaqs(dates: Dates): FAQ[] {
             ? ''
             : ' at ' + Conference.Venue.Afterparty
           : ''
-      }. (Please note that all times on the website are in Perth time: WST or +08:00)`,
+      }.`,
     })
   }
 
