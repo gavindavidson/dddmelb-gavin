@@ -32,5 +32,6 @@ jobs:
       - id: 'upload-pages'
         uses: 'google-github-actions/upload-cloud-storage@v1'
         with:
-          path: '.next/server/pages/*.html'
+          path: '.next/server/pages'
+          glob: '*.html'
           destination: 'dddmelboure.midday.coffee'
