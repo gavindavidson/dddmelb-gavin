@@ -14,12 +14,12 @@ jobs:
     steps:
       - id: 'checkout'
         uses: 'actions/checkout@v3'
-      - id: 'build'
+      - id: 'setup node'
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+      - id: 'build'
         run: npm run build
-
       - id: 'auth'
         uses: 'google-github-actions/auth@v1'
         with:
