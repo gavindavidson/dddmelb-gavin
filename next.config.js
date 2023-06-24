@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const config = {
   poweredByHeader: false,
+  images: {
+    unoptimized: true
+  },
   experimental: {
     outputStandalone: process.env.STANDALONE_BUILD === 'true',
   },
